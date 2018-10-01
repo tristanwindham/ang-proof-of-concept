@@ -1,0 +1,31 @@
+
+
+
+<!-- <igx-grid #grid1 [data]="localData" style="margin-top: 50px" width="1050px" height="900px" [rowSelectable]="true" [paging]="false" [showToolbar]="true" [columnHiding]="true" toolbarTitle="Users" [showToolbar]="true" [columnHiding]="true" toolbarTitle="People">
+  <igx-column field="FirstName" header="First Name"  width="150px" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" >
+  </igx-column>
+  <igx-column field="LastName" header="Last Name" width="150px" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" >
+  </igx-column>
+  <igx-column field="Phone" width="160px" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" [groupable]="true">
+  </igx-column>
+  <igx-column field="Email" width="160px" [sortable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" [groupable]="true">
+  </igx-column>
+  <igx-column field="StartDate" header="Start Date" width="180px" dataType="date" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true">
+    <ng-template igxCell let-value>
+        {{ value | date }}
+    </ng-template>
+      <ng-template igxCellEditor let-cell="cell">
+        <igx-datePicker cancelButtonLabel="cancel" todayButtonLabel="today" [(ngModel)]="cell.value" (onOpen)="pickerOpen()" (onClose)="pickerClose()">
+        </igx-datePicker>
+      </ng-template>
+  </igx-column>
+  <igx-column field="Position" header="Position"  width="160px" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" [groupable]="true" >
+  </igx-column>
+</igx-grid> -->
+
+<igx-grid #grid1 [data]="users" style="margin-top: 50px" width="1050px" height="900px" [rowSelectable]="true" [paging]="false" [showToolbar]="true" [columnHiding]="true" toolbarTitle="Users" [showToolbar]="true" [columnHiding]="true" toolbarTitle="People">
+  <igx-column field="username" header="Username"  width="150px" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" >
+  </igx-column>
+  <igx-column field="password" header="Password" width="150px" [sortable]="true" [filterable]="true" [editable]="true" [resizable]="true" [movable]="true" [editable]="true" [editable]="true" >
+  </igx-column>
+</igx-grid>
